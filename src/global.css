@@ -1,0 +1,29 @@
+/**
+ * Tailwind CSS imports
+ * View the full documentation at https://tailwindcss.com
+ */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "Lexend";
+    src: url(/Lexend.ttf);
+}
+
+body{
+    font-family: "Lexend";
+}
+
+dialog:not([open]){
+    display: none;
+}
+
+.active{
+    background-color: rgba(255,255,255,0.25);
+}
+.active.blue{
+    background-color: #3b82f6 !important;
+    color: white;
+    cursor: not-allowed;
+}
