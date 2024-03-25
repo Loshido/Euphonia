@@ -5,5 +5,15 @@
   "start_url": ".",
   "display": "standalone",
   "background_color": "#258deb",
-  "description": "Une application web qui permet de jouer des playlists et configurer la façon par laquelle la musique est jouée."
+  "description": "Une application web qui permet de jouer des playlists et configurer la façon par laquelle la musique est jouée.",
+  "icons": [
+    {
+      "src": "/fav/fav512.png",
+      "sizes": "512x512"
+    },
+    {
+      "src": "/fav/fav192.png",
+      "sizes": "192x192"
+    }
+  ]
 }
