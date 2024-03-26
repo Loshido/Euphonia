@@ -20,13 +20,14 @@ const { dependencies = {}, devDependencies = {} } = pkg as any as {
  */
 export default defineConfig(({ command, mode }): UserConfig => {
   return {
+    define: {
+      "process.env.NODE_ENV": JSON.stringify("development")
+    },
     plugins: [
       qwikCity(), 
       qwikVite(), 
       tsconfigPaths(), 
-      qwikPwa({
-        image: "fav.svg"
-      })
+      qwikPwa()
     ],
     // This tells Vite which dependencies to pre-build in dev mode.
     optimizeDeps: {
