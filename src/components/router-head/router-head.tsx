@@ -1,6 +1,6 @@
 import { component$ } from "@builder.io/qwik";
 import { useDocumentHead, useLocation } from "@builder.io/qwik-city";
-// import * as pwaHead from "@qwikdev/pwa/head";
+import * as pwaHead from  "@qwikdev/pwa/head";
 
 /**
  * The RouterHead component is placed inside of the document `<head>` element.
