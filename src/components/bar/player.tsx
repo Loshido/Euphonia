@@ -108,6 +108,7 @@ export default component$(() => {
                         s.track.disconnect(s.ctx.destination)
                     }
                     session.state = "suspended"
+                    console.log(session.state)
                 }}
                 viewBox="0 0 24 24" 
                 width="56" 

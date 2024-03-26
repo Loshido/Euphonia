@@ -17,17 +17,14 @@ export const RouterHead = component$(() => {
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 
-      {/* {pwaHead.meta.map((l) => (
+      {pwaHead.meta.map((l) => (
         <meta key={l.key} {...l} />
-      ))} */}
-      {head.meta.map((m) => (
-        <meta key={m.key} {...m} />
       ))}
-
-      {/* {pwaHead.links.map((l) => (
-        <link key={l.key} {...l} />
+      {/* {head.meta.map((m) => (
+        <meta key={m.key} {...m} />
       ))} */}
-      {head.links.map((l) => (
+
+      {pwaHead.links.map((l) => (
         <link key={l.key} {...l} />
       ))}
 
