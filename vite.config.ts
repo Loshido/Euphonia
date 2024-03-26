@@ -25,7 +25,7 @@ export default defineConfig(({ command, mode }): UserConfig => {
       qwikVite(), 
       tsconfigPaths(), 
       qwikPwa({
-        image: "/fav.svg"
+        image: "fav.svg"
       })
     ],
     // This tells Vite which dependencies to pre-build in dev mode.
