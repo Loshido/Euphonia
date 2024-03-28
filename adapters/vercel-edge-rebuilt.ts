@@ -1,7 +1,7 @@
 import type { StaticGenerateRenderOptions } from '@builder.io/qwik-city/static';
 import { viteAdapter, type ServerAdapterOptions, getParentDir } from '@builder.io/qwik-city/adapters/shared/vite';
 import fs from 'node:fs';
-import { dirname, join } from 'node:path';
+import { join } from 'node:path';
 
 //
 // ⚠️ Rebuild of the vercel-edge adapter 
@@ -45,7 +45,7 @@ export function vercelEdgeAdapter(opts: VercelEdgeAdapterOptions = {}): any {
       };
     },
 
-    async generate({ clientPublicOutDir, serverOutDir, basePathname, outputEntries }) {
+    async generate({ serverOutDir, basePathname, outputEntries }) {
       const vercelOutputDir = getParentDir(serverOutDir, 'output');
 
       if (opts.outputConfig !== false) {

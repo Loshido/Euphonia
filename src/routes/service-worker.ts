@@ -13,8 +13,8 @@ import { setupPwa } from "@qwikdev/pwa/sw";
 setupServiceWorker();
 setupPwa();
 
-addEventListener("install", () => self.skipWaiting());
+// addEventListener("install", () => self.skipWaiting());
 
-addEventListener("activate", () => self.clients.claim());
+// addEventListener("activate", () => self.clients.claim());
 
-declare const self: ServiceWorkerGlobalScope;
+// declare const self: ServiceWorkerGlobalScope;
